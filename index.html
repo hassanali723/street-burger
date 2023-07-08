@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Title</title>
+<style>
+  *{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+  }
+  .item {
+  font-size: 18px;
+  color: #000000;
+  font-family: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+  text-decoration: none;
+  
+}
+
+.item:focus,
+.item:hover {
+  color: #000000;
+}
+
+.item:focus:after,
+.item:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+.item:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #3f701f;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+.logo{
+  height: 40px;
+  width: 40px;
+}
+.orderbutton{
+  color: white;
+  background-color: #4c8b22;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: #4c8b22 2px solid;
+  
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: 500;
+}
+.orderbutton:hover{
+  color: #4c8b22;
+  background-color: #ffffff;
+}
+
+</style>
+</head>
+<body>
+
+  <!-- navbar start -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+      <div class="container-fluid">
+        <a class="navbar-brand px-5" href="#"><img height="50px" src="./asset/logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div  class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-5 px-5 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active item "  aria-current="page" href="#">HOME</a>
+            </li>
+
+
+            <li class="nav-item dropdown">
+              <a style="color: #000000;" class="nav-link item" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                MENU
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+
+
+
+
+
+            <li class="nav-item dropdown">
+              <a style="color: #000000;" class="nav-link item" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                DEALS
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a style="color: #000000;" class="nav-link active-item item">CATERING</a>
+            </li>
+            <li class="nav-item">
+              <a style="color: #000000;" class="nav-link active-item item">STORE LOCATOR</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <button class="orderbutton"  class="btn btn-outline-success" type="submit">ORDER NOW</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+  </header>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
